@@ -11,7 +11,7 @@ import (
 
 // GetFloat by jgu1
 func GetFloat() (float64,error) {
-    fmt.Println("welcome to use jgu1's package!")
+    fmt.Println("\n(Welcome to use jgu1's package!)")
     reader := bufio.NewReader(os.Stdin)
     input,err := reader.ReadString('\n')
     if err != nil {
@@ -23,5 +23,5 @@ func GetFloat() (float64,error) {
     if err != nil {
         return 0, err
     }
-    return number*10, nil
+    return number, nil
 }
