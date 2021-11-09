@@ -23,5 +23,5 @@ func GetFloat() (float64,error) {
     if err != nil {
         return 0, err
     }
-    return number, nil
+    return number*10, nil
 }
